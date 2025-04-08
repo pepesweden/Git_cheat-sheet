@@ -67,3 +67,39 @@ git push
 - Det är fortfarande bra vana att alltid utgå från `main`
 - Använd prefix som `feat/`, `fix/`, `test/` i branch-namn för struktur
 
+# 🔀 Mini GitHub Pull Request Cheat Sheet (för central merge)
+
+## ✅ Steg-för-steg
+```bash
+# 1. Utgå från main
+git checkout main
+git pull
+
+# 2. Skapa ny branch för ändringen
+git checkout -b feat/ny-funktion
+
+# 3. Gör ändringar och committa
+git add .
+git commit -m "feat: implementera ny funktion"
+
+# 4. Pusha upp din branch till GitHub
+git push -u origin feat/ny-funktion
+```
+
+## 📝 5. Skapa Pull Request på GitHub
+- Gå till repo på GitHub
+- Klicka på “Compare & pull request”
+- Skriv titel och beskrivning
+- Bekräfta → [Create pull request]
+
+## ✅ 6. Mergning
+- När PR:n är granskad eller godkänd (även av dig själv om du jobbar solo)
+- Klicka på [Merge pull request]
+- Ta bort branch (valfritt)
+
+## 🧹 7. Städa lokalt efter merge
+```bash
+git checkout main
+git pull
+git branch -d feat/ny-funktion
+```
