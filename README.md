@@ -39,7 +39,8 @@
    git push
 
 
-   # ✅ Git Init Checklist – Lägg till ett nytt projekt i GitHub
+
+## ✅ Git Init Checklist – Lägg till ett nytt projekt i GitHub
 
 ```bash
 # 1. Navigera till din projektmapp
