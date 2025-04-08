@@ -65,9 +65,8 @@ git push -u origin main
 git remote -v
 ```
 
+ 🧠 Bonus: Undo & Rollback
    ```
-
-## 🧠 Bonus: Undo & Rollback
 - Unstage a file:
   ```bash
   git restore --staged <file>
@@ -85,7 +84,10 @@ git remote -v
   ```bash
   git reset --hard HEAD
   ```
-
+- Stop tracking all files added (if you added gitignore for ex)
+  ```bash
+  git rm -r --cached .
+  ```
 
 
 ## 🔁 Rollback Efter Push (Force Push)
