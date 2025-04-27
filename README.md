@@ -138,17 +138,12 @@ rm file.txt
 # 🚀 Manuell Clone av Template-projekt
 ## 📋 Snabbversion
 
+Stå i mappen med projekt
 ```bash
-cd /dit/du/vill
-git clone URL.git nytt-namn
-cd nytt-namn
-rm -rf .git
-git init
-git add .
-git commit -m "New start"
-git remote add origin NYTT-REPO-URL
-git push -u origin main
+gh repo create USERNAME/<project_name> --template pepesweden/automation-project_template --private
+git clone git@github.com:pepesweden/pdf_generator.git
 ```
+
 
 ---
 
