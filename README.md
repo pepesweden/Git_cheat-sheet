@@ -134,3 +134,21 @@ git restore --staged file.txt
 rm file.txt
 ```
 > 🧠 Detta återställer GitHub till före din senaste commit – och raderar filen lokalt.
+
+# 🚀 Manuell Clone av Template-projekt
+## 📋 Snabbversion
+
+```bash
+cd /dit/du/vill
+git clone URL.git nytt-namn
+cd nytt-namn
+rm -rf .git
+git init
+git add .
+git commit -m "New start"
+git remote add origin NYTT-REPO-URL
+git push -u origin main
+```
+
+---
+
