@@ -1,0 +1,63 @@
+# 🚀 Manuell Clone av Template-projekt
+
+Här är en steg-för-steg guide för att snabbt skapa ett nytt projekt från min scaffold-template.
+
+---
+
+## 📚 Steg-för-steg
+
+1. **Navigera till var du vill skapa projektet:**
+   ```bash
+   cd /väg/till/projektmapp
+   ```
+
+2. **Klona template-repot och ge nytt projektnamn:**
+   ```bash
+   git clone https://github.com/patrickwarme/automation-project_template.git nytt-projektnamn
+   ```
+
+3. **Gå in i nya projektmappen:**
+   ```bash
+   cd nytt-projektnamn
+   ```
+
+4. **Ta bort gammalt Git-koppling:**
+   ```bash
+   rm -rf .git
+   ```
+
+5. **Initiera ett nytt Git-repo:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Start new project from scaffold"
+   ```
+
+6. **Skapa nytt tomt repo på GitHub via webben.**
+
+7. **Koppla nya projektet till ditt nya GitHub-repo:**
+   ```bash
+   git remote add origin https://github.com/ditt-användarnamn/ditt-nya-repo.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+---
+
+## 📋 Snabbversion
+
+```bash
+cd /dit/du/vill
+git clone URL.git nytt-namn
+cd nytt-namn
+rm -rf .git
+git init
+git add .
+git commit -m "New start"
+git remote add origin NYTT-REPO-URL
+git push -u origin main
+```
+
+---
+
+# 🎯 Klar att börja bygga!
