@@ -66,8 +66,25 @@ git push -u origin main
 git remote -v
 ```
 
- 🧠 Bonus: Undo & Rollback
+## ⏎ Rollback workflow
+1. List recent commits
+  ```bash
+  git log --oneline
+  ```
+
+2a. Soft reset - Only move head pointer
+   ```bash
+   git reset --soft <hash>
    ```
+
+2b. Hard reset - Moves head pointer, restores staging area, restores working directory
+   ```bash
+   git reset --hard <hash>
+   ```
+
+
+## 🧠 Bonus: Undo & Rollback
+
 - Unstage a file:
   ```bash
   git restore --staged <file>
@@ -89,29 +106,6 @@ git remote -v
   ```bash
   git rm -r --cached .
   ```
-
-
-## 🔁 Rollback Efter Push (Force Push)
-Scenario: Du har pushat en commit du vill ångra.
-
-```bash
-# 1. Skapa test-commit
-echo "test" >> test.txt
-git add test.txt
-git commit -m "test: pushed by mistake"
-git push
-
-# 2. Ångra senaste commit lokalt
-git reset --soft HEAD~1
-
-# 3. Force push till GitHub för att radera commiten
-git push --force
-
-# 4. Ta bort filen helt (om du inte vill ha kvar den lokalt)
-git restore --staged test.txt
-rm test.txt
-```
-
 
 ---
 ## 🔁 BONUS: Rollback efter `push` (force reset)
